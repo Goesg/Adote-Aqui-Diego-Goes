@@ -1,0 +1,151 @@
+ .caixa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-principal{
+   background:linear-gradient(90deg, rgba(88, 88, 88, 0.822) 62%, rgb(250, 235, 33) 38%) ;
+   border-radius: 18px;
+    
+}
+
+
+main{
+    
+    background:url("fundo3.jpg");
+
+}
+
+.caixa{
+    width: 95%;
+    height: 6em;
+    margin: 0 auto;
+    
+}
+
+.caixa h1{
+    font-size: 3.5em;
+    color: rgb(255, 240, 36);
+    font-family:'Kiwi Maru', serifa;
+    text-shadow: 5px 4px rgb(0, 0, 0);
+    
+}
+
+.cabecalho-nav{
+    width: 37%;
+}
+
+.cabecalho-ul{
+ display: flex;
+ justify-content: space-around;
+ 
+}
+
+
+.cabecalho-nav li a{
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    text-decoration: none;
+    font-family:'Kiwi Maru', serifa;
+    transition: 1s;
+  
+}
+
+.caixa h1:hover{
+    font-size: 4.2em;
+}
+
+.cabecalho-nav li a:hover{
+    color: rgb(59, 222, 228);
+    transition: 1s;
+}
+
+.fotos-principal{
+    width: 86%;
+    margin: 0 auto;
+    background: rgba(236, 236, 236, 0.972);
+    border-radius: 75px;
+}
+
+.caixa-fotos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    
+}
+
+.caixa-fotos img{
+    width: 22%;
+    margin: 2em 0;
+    border: 4px dashed rgb(230, 215, 10);
+    border-radius: 10px;
+    opacity: 0.69;
+    
+    
+}
+
+
+.caixa-fotos img:hover{
+    font-size: 20%;
+    border: 6px solid rgb(230, 215, 10);
+    border-radius: 23px;
+    opacity:1;
+    transition: 0.4s;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(250, 235, 33);
+  padding: 1.6em;
+  border-radius: 15px;
+  
+}
+
+footer img{
+    width: 10em;
+    border-radius: 100px;
+   
+}
+
+footer p{
+    color: #000000;
+	font-size: 1.25em;
+    margin-top: 1.2em;
+    font-weight: bold;	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .caixa{height: 7.5em; width: 100%; margin: 0 auto;}
+    .caixa h1{display: none;}
+    .cabecalho-principal{ background: yellow;}
+    .cabecalho-ul{ display: flex; flex-direction: column; align-items: center;}
+    .cabecalho-nav{margin: 0 auto; height: 87%; display: flex; text-align: center; justify-content: space-around;}
+    .cabecalho-nav li{; border-top: 2px solid rgb(221, 231, 231)  ;}
+    .cabecalho-nav li a{font-size: 1.8em;}
+
+    .caixa-fotos{ display: flex; flex-direction: column; align-items: center;}
+    .caixa-fotos img{ width: 58%; border: 4px dashed rgb(230, 215, 10); border-radius: 10px; opacity: 1;}
+
+    footer{padding: 0.88em;}
+    footer img{ width: 4.6em;}
+    footer p{font-size: 0.9em; margin-top: 0.89em;}
+    
+}
+
